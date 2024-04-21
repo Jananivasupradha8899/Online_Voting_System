@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title> Online Voting System - Registration</title>
+        <link rel="stylesheet" href="css/styles.css">
+       </head>    
+       <body>
+    
+        <style>
+            #Address{
+                width: 24.7%;
+            }
+            #imagepart{
+                border: 2px solid black;
+                border-radius:5px;
+                padding: 7px;
+                width: 24.5%;
+            }
+            #role{
+                border: 2px solid black;
+                border-radius:5px;
+                padding: 7px;
+                width: 24.5%;
+            }
+            #role select{
+                border-radius:5px;
+                padding: 4px;
+            }
+            #Aadhar{
+                width: 24.7%;
+            }
+        </style>
+         
+        <div id="headerSection">
+           <center>
+           <h1> Online Voting System</h1>
+           
+       </center>
+       
+       <section id="register">
+        <div class="container">
+            <a href="index.html" class="back-link">Back to Home</a>
+        </div>
+    </section> 
+
+    </div>
+        <hr>
+        <div id="bodySection">
+        <center>
+           <h3>Registration</h3>
+        <form action="#">
+            <input type="text" name="Name" placeholder="Enter Name">
+            <input type="number" name="Mobile No" placeholder="Enter Mobile No"><br><br>
+            <input type="password" name="Password" placeholder="Enter Password">
+            <input type="password" name="cPassword" placeholder="Confirm Password"><br><br>
+            <input id="Aadhar" type="password" name="aadhar number" placeholder="Enter you Aadhar or Voter id"><br><br>
+            <input id = "Address" type="text" name="Address" placeholder="Enter Address"><br><br>
+            <div id="imagepart">
+                Upload image: <input type="file" name="photo">
+            </div>
+            <br>
+            <div id="role">
+            Select your role: <select name="role">
+                <option value="1">Voter</option>
+                <option value="2">Group</option>
+            </select>
+        </div>
+        <br>
+            <button 
+                style="padding: 4px;
+                        border-radius:5px ;
+                        background-color: #2908ac ;
+                        color: white;
+                        border-radius: 5px ;"
+            >Register</button>
+            <br><br>
+            Existing User?<a href= "login.html" class="back-link">Login Here</a>
+        </form>
+        </center>
+    </div>
+         </body>
+</html>
