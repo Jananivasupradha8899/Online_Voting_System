@@ -1,0 +1,71 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Header Styles */
+header {
+   
+    color: black;
+    padding: 20px 0;
+}
+
+header h1 {
+    float: left;
+    margin: 0;
+}
+
+/* Vote Casting Section Styles */
+#vote-casting {
+    padding: 50px 0;
+}
+
+#vote-casting form {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+#vote-casting label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#vote-casting select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#vote-casting button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #2908ac;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#vote-casting button:hover {
+    background-color: #2908ac;
+}
+
+/* Footer Styles */
+footer {
+   
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+}
+

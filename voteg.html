@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote Casting - Online Voting System</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            background-image: url("Premium Vector _ Abstract background of molecules.jpeg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif; /* Optional: Set font family */
+        }
+    </style>
+</head>
+<body background="Premium Vector _ Abstract background of molecules.jpeg">
+    <header>
+        <br><br>
+        <div class="container">
+            <h1>Online Voting System</h1>
+        </div>
+    </header>
+
+    <section id="vote-casting">
+        <div class="container">
+            <h2>Vote Casting</h2>
+            <form id="vote-form">
+                <label><input type="radio" name="group" value="group1"> Group 1</label>
+                <label><input type="radio" name="group" value="group2"> Group 2</label>
+                <label><input type="radio" name="group" value="group3"> Group 3</label>
+                <label><input type="radio" name="group" value="group4"> Group 4</label>
+                <button type="button" onclick="castVote()">Vote</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Online Voting System</p>
+        </div>
+    </footer>
+
+    <script>
+        function castVote() {
+            var selectedGroup = document.querySelector('input[name="group"]:checked');
+            if (selectedGroup) {
+                var groupValue = selectedGroup.value;
+                alert("Vote casted for " + groupValue);
+                // Here you can add code to send the vote to the server
+                // For frontend-only, we'll just redirect to the results page
+                window.location.href = "results.html";
+            } else {
+                alert("Please select a group to vote for.");
+            }
+        }
+    </script>
+</body>
+</html>
+
