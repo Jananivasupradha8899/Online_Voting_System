@@ -1,7 +1,18 @@
 <html>
-       <head>
+      <head>
              <title> Online Voting System </title>
              <link rel="stylesheet" href="css/styles.css">
+             <style>
+                body {
+                    background-image: url("Download premium vector of Light blue cubic blank background vector for business by Wit about backgrounds, iphone wallpaper, abstract background, mobile wallpaper, and background design 2758845.jpeg");
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    margin: 0;
+                    padding: 0;
+                    font-family: Arial, sans-serif; /* Optional: Set font family */
+                }
+            </style>
             </head>  
 
             <body>
@@ -19,7 +30,7 @@
             </section>
     
                 </div>
-                <hr>
+                
                 <div id="bodySection">
                     <center>
                         <form action="#">
@@ -30,12 +41,22 @@
                                 <option value="1">Voter</option>
                                 <option value="2">Group</option>
                             </select><br><br>
-                            <button style="" id="loginbutton">Login</button><br><br>
+                            <button type="button" id="loginbutton" onclick="loginUser()">Login</button><br><br>
                             New User?<a href="register.html" class="back-link">Register here </a>
                         </form>
+                        
                     </center>  
                 </div>
-                
+                <script>
+                    function loginUser() {
+                        // Here you can add code to submit the registration form to the server
+                        // For frontend-only, we'll just show an alert
+                        alert("Logedin successfully!");
+                        
+                        // Here you can add code to submit the registration form to the server
+                        // For frontend-only, we'll just redirect to the vote page
+                        window.location.href = "voteg.html";
+                    }
+                </script>
             </body>
-       
 </html>
